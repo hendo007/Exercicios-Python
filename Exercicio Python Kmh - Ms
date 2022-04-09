@@ -1,0 +1,5 @@
+# Programa da fórmula de conersão de Km/h para M/s
+
+valor = input("Digite o valor em Km/h que deseja converter para M/s: ") # Recebe o valor que o usuário irá digitar em Km/h
+
+print(f"O valor convertido fica: {int(valor)/3.6}") # Retorna o valor convertido em M/s
