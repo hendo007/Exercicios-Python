@@ -1,0 +1,9 @@
+"""
+Programa que lê a medida dos catetos de um triângulo e devolve o valor da hipotenusa
+"""
+
+cateto_a = input("Digite a medida do cateto a: ")
+
+cateto_b = input("Digite a medida do cateto b: ")
+
+print(f"A medida da hipotenusa e: {((int(cateto_a)**2) + (int(cateto_b)**2))**0.5}")
