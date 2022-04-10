@@ -1,0 +1,19 @@
+"""
+Programa que encontra as duas raízes de uma função de segundo grau
+"""
+
+a = input("Digite o valor de a: ")
+
+b = input("Digite o valor de b: ")
+
+c = input("Digite o valor de c ")
+
+delta = (int(b)**2) - (4 * int(a) * int(c))  # Encontra o valor de delta pela fórmula b^2 - 4 * a * c
+
+if delta < 0:
+    print(f"O delta é: {delta}")
+    print("Equação não possui raízes reais!!")
+else:
+    print(f"O delta é: {delta}")
+    print(f"X1 = {(-int(b) + delta**0.5)/(2 * int(a))}")  # Retorna a raíz 1, utilizando a fórmula de Bhaskara
+    print(f"X2 = {(-int(b) - delta ** 0.5) / (2 * int(a))}")  # Retorna a raíz 2, utilizando a fórmula de Bhaskara
