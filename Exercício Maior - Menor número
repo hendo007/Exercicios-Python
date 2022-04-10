@@ -1,0 +1,21 @@
+"""
+Programa que informa o maior e o menor número digitado entre 10 números digitados pelo usuário
+"""
+
+maior = 0
+menor = 0
+
+for i in range(11):  #loop para receber os números e verificar se ele é maior ou menor que os digitados anteriormente
+    num = int(input("Digite um número: "))
+    if i == 0:
+        maior = num
+        menor = num
+
+    elif num > maior:
+        maior = num
+
+    elif num < menor:
+        menor = num
+
+print(f"\nO maior número digitado foi: {maior}")
+print(f"\nO menor número digitado foi: {menor}")
