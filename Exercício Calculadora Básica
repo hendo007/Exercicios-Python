@@ -1,0 +1,26 @@
+"""
+Programa que faz operações básicas entre 2 números
+"""
+# Recebe o valor que indicará qual operação o usuário deseja realizar
+num_operacao = input(" 1- Soma\n 2- Subtração\n 3- Multiplicação\n 4- Divisão\n" 
+                     " 5- Exponenciação\n Qual opeação deseja realizar? ")
+
+if int(num_operacao) <= 0 or int(num_operacao) > 5:  # Verifica se o valor digitado é um valor válido dentre as
+    print("\nDigite um número válido!")              # operações existentes, caso não seja, ele encerra o programa
+    exit()
+
+num1 = input("Digite o primeiro número: ")  
+
+num2 = input("Digite o segundo número: ")   
+
+
+if num_operacao == "1":
+    print(f"A soma entre {num1} e {num2} é: {int(num1) + int(num2)}")
+elif num_operacao == "2":
+    print(f"A subtração entre {num1} e {num2} é: {int(num2) - int(num2)}")
+elif num_operacao == "3":
+    print(f"A multiplicação entre {num1} e {num2} é: {int(num2) * int(num2)}")
+elif num_operacao == "4":
+    print(f"A divisão entre {num1} e {num2} é: {int(num2) / int(num2)}")
+elif num_operacao == "5":
+    print(f"O {num1} elevado a {num2} é igual a: {int(num1) ** int(num2)}")
